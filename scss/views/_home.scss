@@ -1,0 +1,10 @@
+main {
+  max-width: 1024px;
+  margin: auto;
+
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (min-width: $break-desktop) {
+}
