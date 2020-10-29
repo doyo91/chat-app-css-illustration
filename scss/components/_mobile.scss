@@ -6,8 +6,9 @@
   border: 1.2rem solid white;
   position: relative;
   overflow: hidden;
-
-  @media screen and (max-width: $break-medium) {
+  z-index: 9;
+  box-shadow: 12px 10px 17px -11px rgba(0, 0, 0, 0.3);
+  @media screen and (max-width: 500px) {
     transform: scale(0.8);
   }
 
@@ -158,6 +159,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     &:hover {
       background-color: lighten($clr-secondary-dark-violet, 15%);
