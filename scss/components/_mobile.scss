@@ -1,0 +1,72 @@
+.mobile {
+  width: 30rem;
+  height: 60rem;
+  background-color: $clr-secondary-grayish-violet;
+  border-radius: 4rem;
+  border: 1.2rem solid white;
+  position: relative;
+  overflow: hidden;
+
+  &__pill {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(-6.5rem);
+    width: 15rem;
+    height: 2rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+  //   Header
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 7.5rem;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(
+      to right,
+      rgba($clr-gradient-violet, 0.7) 0.125%,
+      $clr-gradient-magenta
+    );
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  &__headerIcons {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  &__user {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 0.25rem;
+    cursor: pointer;
+
+    img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: 2px solid white;
+      margin-right: 1rem;
+    }
+
+    & .mobile__headings {
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $clr-text-primary-pale-violet;
+      }
+    }
+  }
+
+  //   Content
+
+  // Footer
+}

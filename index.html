@@ -11,8 +11,39 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.min.css" />
 
     <title>Frontend Mentor | Chat app CSS illustration</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <article class="mobile">
+        <div class="mobile__pill"></div>
+        <header class="mobile__header">
+          <div class="mobile__headerIcons">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="mobile__user">
+            <img src="./images/avatar.jpg" alt="Avatar" />
+            <div class="mobile__headings">
+              <h2>Samuel Green</h2>
+              <p>Available to Walk</p>
+            </div>
+          </div>
+          <div class="mobile__headerIcons">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </header>
+        <div class="mobile__content"></div>
+        <footer class="mobile__footer"></footer>
+      </article>
+    </main>
+  </body>
 </html>
