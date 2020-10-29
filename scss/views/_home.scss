@@ -8,6 +8,10 @@ main {
   justify-content: center;
   align-items: center;
   padding-top: 3rem;
+
+  .info {
+    display: none;
+  }
 }
 
 @media screen and (min-width: $break-desktop) {
