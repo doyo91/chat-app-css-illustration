@@ -41,9 +41,74 @@
             <i class="fas fa-ellipsis-v"></i>
           </div>
         </header>
-        <div class="mobile__content"></div>
-        <footer class="mobile__footer"></footer>
+        <div class="mobile__content">
+          <div class="mobile__chat mobile__chat--left">
+            <p>That sounds great. I’d be happy with that.</p>
+          </div>
+          <div class="mobile__chat mobile__chat--left">
+            <p>Could you send over some pictures of your dog, please?</p>
+          </div>
+          <div class="mobile__images">
+            <img src="./images/dog-image-1.jpg" alt="Dog" />
+            <img src="./images/dog-image-2.jpg" alt="Dog" />
+            <img src="./images/dog-image-3.jpg" alt="Dog" />
+          </div>
+          <div class="mobile__chat mobile__chat--right">
+            <p>Here are a few pictures. She’s a happy girl!</p>
+          </div>
+          <div class="mobile__chat mobile__chat--right">
+            <p>Can you make it?</p>
+          </div>
+          <div class="mobile__chat mobile__chat--left">
+            <p>
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </p>
+          </div>
+          <div class="pricing">
+            <label for="30">
+              <input type="radio" id="30" name="duration" value="30" />
+              <i></i>
+              <span class="pricing__option">30 minute walk</span>
+              <span class="pricing__price">$29</span>
+            </label>
+          </div>
+          <div class="pricing">
+            <label for="60">
+              <input type="radio" id="60" name="duration" value="60" />
+              <i></i>
+              <span class="pricing__option">1 hour walk</span>
+              <span class="pricing__price">$49</span>
+            </label>
+          </div>
+        </div>
+        <footer class="mobile__footer">
+          <input
+            type="text"
+            class="mobile__input"
+            placeholder="Type a message..."
+          />
+          <button type="submit" class="mobile__btnSubmit">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </footer>
       </article>
+      <article class="info">
+        <h1 class="info__title">Simple booking</h1>
+        <p class="info__description">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </article>
+      <div class="bg-main"></div>
     </main>
+
+    <script>
+      document
+        .querySelectorAll('input[type="radio"]')
+        .forEach((x) => (x.checked = false));
+    </script>
   </body>
 </html>
