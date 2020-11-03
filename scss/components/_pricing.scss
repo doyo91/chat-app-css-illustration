@@ -14,9 +14,10 @@
     align-items: center;
     background-image: linear-gradient(
       to left,
-      rgba($clr-gradient-violet, 0.7) 0.125%,
+      $clr-gradient-violet 50%,
       $clr-gradient-magenta
     );
+
     position: relative;
     cursor: pointer;
 

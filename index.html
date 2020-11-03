@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no"
+    />
     <!-- displays site properly based on user's device -->
 
     <link
@@ -18,90 +21,112 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.min.css" />
 
     <title>Frontend Mentor | Chat app CSS illustration</title>
   </head>
   <body>
     <main>
-      <article class="mobile">
-        <div class="mobile__pill"></div>
-        <header class="mobile__header">
-          <div class="mobile__headerIcons">
-            <i class="fas fa-chevron-left"></i>
-          </div>
-          <div class="mobile__user">
-            <img src="./images/avatar.jpg" alt="Avatar" />
-            <div class="mobile__headings">
-              <h2>Samuel Green</h2>
-              <p>Available to Walk</p>
+      <div class="container">
+        <article class="mobile animate__animated animate__backInDown">
+          <div class="mobile__pill"></div>
+          <header class="mobile__header">
+            <div class="mobile__headerIcons">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="mobile__user">
+              <img src="./images/avatar.jpg" alt="Avatar" />
+              <div class="mobile__headings">
+                <h2>Samuel Green</h2>
+                <p>Available to Walk</p>
+              </div>
+            </div>
+            <div class="mobile__headerIcons">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </header>
+          <div class="mobile__content">
+            <div
+              class="mobile__chat mobile__chat--left animate__animated animate__fadeIn animate__delay-1s"
+            >
+              <p>That sounds great. I’d be happy with that.</p>
+            </div>
+            <div
+              class="mobile__chat mobile__chat--left animate__animated animate__fadeIn animate__delay-1s"
+            >
+              <p>Could you send over some pictures of your dog, please?</p>
+            </div>
+            <div
+              class="mobile__images animate__animated animate__fadeIn animate__delay-2s"
+            >
+              <img src="./images/dog-image-1.jpg" alt="Dog" />
+              <img src="./images/dog-image-2.jpg" alt="Dog" />
+              <img src="./images/dog-image-3.jpg" alt="Dog" />
+            </div>
+            <div
+              class="mobile__chat mobile__chat--right animate__animated animate__fadeIn animate__delay-2s"
+            >
+              <p>Here are a few pictures. She’s a happy girl!</p>
+            </div>
+            <div
+              class="mobile__chat mobile__chat--right animate__animated animate__fadeIn animate__delay-2s"
+            >
+              <p>Can you make it?</p>
+            </div>
+            <div
+              class="mobile__chat mobile__chat--left animate__animated animate__fadeIn animate__delay-3s"
+            >
+              <p>
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
+            </div>
+            <div
+              class="pricing animate__animated animate__fadeIn animate__delay-3s"
+            >
+              <label for="30">
+                <input type="radio" id="30" name="duration" value="30" />
+                <i></i>
+                <span class="pricing__option">30 minute walk</span>
+                <span class="pricing__price">$29</span>
+              </label>
+            </div>
+            <div
+              class="pricing animate__animated animate__fadeIn animate__delay-3s"
+            >
+              <label for="60">
+                <input type="radio" id="60" name="duration" value="60" />
+                <i></i>
+                <span class="pricing__option">1 hour walk</span>
+                <span class="pricing__price">$49</span>
+              </label>
             </div>
           </div>
-          <div class="mobile__headerIcons">
-            <i class="fas fa-ellipsis-v"></i>
-          </div>
-        </header>
-        <div class="mobile__content">
-          <div class="mobile__chat mobile__chat--left">
-            <p>That sounds great. I’d be happy with that.</p>
-          </div>
-          <div class="mobile__chat mobile__chat--left">
-            <p>Could you send over some pictures of your dog, please?</p>
-          </div>
-          <div class="mobile__images">
-            <img src="./images/dog-image-1.jpg" alt="Dog" />
-            <img src="./images/dog-image-2.jpg" alt="Dog" />
-            <img src="./images/dog-image-3.jpg" alt="Dog" />
-          </div>
-          <div class="mobile__chat mobile__chat--right">
-            <p>Here are a few pictures. She’s a happy girl!</p>
-          </div>
-          <div class="mobile__chat mobile__chat--right">
-            <p>Can you make it?</p>
-          </div>
-          <div class="mobile__chat mobile__chat--left">
-            <p>
-              She looks so happy! The time we discussed works. How long shall I
-              take her out for?
-            </p>
-          </div>
-          <div class="pricing">
-            <label for="30">
-              <input type="radio" id="30" name="duration" value="30" />
-              <i></i>
-              <span class="pricing__option">30 minute walk</span>
-              <span class="pricing__price">$29</span>
-            </label>
-          </div>
-          <div class="pricing">
-            <label for="60">
-              <input type="radio" id="60" name="duration" value="60" />
-              <i></i>
-              <span class="pricing__option">1 hour walk</span>
-              <span class="pricing__price">$49</span>
-            </label>
-          </div>
-        </div>
-        <footer class="mobile__footer">
-          <input
-            type="text"
-            class="mobile__input"
-            placeholder="Type a message..."
-          />
-          <button type="submit" class="mobile__btnSubmit">
-            <i class="fas fa-chevron-right"></i>
-          </button>
-        </footer>
-      </article>
-      <article class="info">
-        <h1 class="info__title">Simple booking</h1>
-        <p class="info__description">
-          Stay in touch with our dog walkers through the chat interface. This
-          makes it easy to discuss arrangements and make bookings. Once the walk
-          has been completed you can rate your walker and book again all through
-          the chat.
-        </p>
-      </article>
+          <footer class="mobile__footer">
+            <input
+              type="text"
+              class="mobile__input"
+              placeholder="Type a message..."
+            />
+            <button type="submit" class="mobile__btnSubmit">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </footer>
+        </article>
+        <article class="info animate__animated animate__backInUp animate__fast">
+          <h1 class="info__title">Simple booking</h1>
+          <p class="info__description">
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
+        </article>
+      </div>
       <div class="bg-main"></div>
       <div class="bg-mainGray"></div>
     </main>
