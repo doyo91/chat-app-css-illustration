@@ -11,6 +11,12 @@
   @media screen and (max-width: 500px) {
     transform: scale(0.8);
   }
+  @media screen and (max-width: $break-desktop) {
+    margin-top: 4rem;
+  }
+  @media screen and (min-width: 2000px) {
+    transform: scale(1.2) !important;
+  }
 
   &__pill {
     position: absolute;
@@ -33,9 +39,10 @@
     padding: 1rem;
     background-image: linear-gradient(
       to right,
-      rgba($clr-gradient-violet, 0.7) 0.125%,
+      $clr-gradient-violet 45%,
       $clr-gradient-magenta
     );
+
     border-radius: 0 0 0.5rem 0.5rem;
   }
   &__headerIcons {
